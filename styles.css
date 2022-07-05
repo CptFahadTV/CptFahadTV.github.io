@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3)rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo {
+    width: 500px;
+    margin-left: -100px;
+}
+
+nav {
+    width: -30%;
+    top: 0;
+    left: 0;
+    margin-top: -45%;
+    padding-right: 20px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.thumbnails {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: stretch;
+    -webkit-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.thumbnails .box {
+    margin-top: -500px;
+    color: #fff;
+    font-family: fantasy;
+    font-size: small;
+    margin-left: -480px;
+}
+
+.flybock {
+    display: flex;
+    align-items: center;
+    padding: 200%;
+    border: 20px;
+}
