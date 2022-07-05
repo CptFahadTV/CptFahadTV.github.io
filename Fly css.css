@@ -21,13 +21,33 @@ nav .logo {
     margin-left: -100px;
 }
 
+canvas {
+    width: 500px;
+    height: 280px;
+    margin-left: 32%;
+    margin-top: 15%;
+    border:1px solid #990011FF;
+    background-color: #101820FF;
+}
+
+.button {
+    font-size: 25px;
+    width: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    background-color: #101820FF;
+    color: #990011FF;
+    position: absolute;
+    bottom: 90%;
+    
+}
+
 nav {
     width: -30%;
     top: 0;
     left: 0;
-    margin-top: -45%;
-    padding-right: 20px;
-    padding-left: 15px;
+    margin-left: 8%;
+    margin-top: -120%;
     display: flex;
     align-items: center;
     justify-content: space-between;    
@@ -49,9 +69,3 @@ nav ul li a {
     font-size: 14px;
 }
 
-.canvas .filter .restartbutton .game {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    margin: 300px;
-}
