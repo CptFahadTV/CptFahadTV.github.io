@@ -26,20 +26,30 @@ canvas {
     height: 280px;
     margin-left: 32%;
     margin-top: 15%;
-    border:1px solid #990011FF;
+    border:1px solid crimson;
     background-color: #101820FF;
 }
 
 .button {
-    font-size: 25px;
     width: 120px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     background-color: #101820FF;
-    color: #990011FF;
+    color: crimson;
     position: absolute;
     bottom: 90%;
-    
+    border: 1px solid crimson;
+}
+
+.btn {
+    width: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    background-color: #101820FF;
+    color: crimson;
+    position: absolute;
+    bottom: 80%;
+    border: 1px solid crimson;
 }
 
 nav {
@@ -47,7 +57,7 @@ nav {
     top: 0;
     left: 0;
     margin-left: 8%;
-    margin-top: -120%;
+    margin-top: -125%;
     display: flex;
     align-items: center;
     justify-content: space-between;    
