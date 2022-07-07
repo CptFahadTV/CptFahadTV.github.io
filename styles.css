@@ -47,6 +47,20 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+.summary {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;  
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center; 
+}
+
 nav ul li a {
     color: white;
     text-decoration: none;
