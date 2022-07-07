@@ -26,13 +26,38 @@
         var myScore;
         
         function startGame() {
-    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGamePiece = new component(30, 30, "crimson", 10, 120, "image");
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("30px", "Consolas", "white", 280, 40, "text");
     myGameArea.start();
 }
 
-        
+function component(width, height, color, x, y, type)  {
+    this.type = type;
+    if (type == "image") {
+        this.image = new Image();
+        this.image.src = color;
+    }
+    this.width = width;
+    this.height = height;
+    this.speedX = 0;
+    this.speedY = 0;    
+    this.x = x;
+    this.y = y;    
+    this.update = function() {
+        ctx = myGameArea.context;
+        if (type == "image") {
+            ctx.drawImage(this.image, 
+                this.x, 
+                this.y,
+                this.width, this.height);
+        } else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+    }
+}    
+
         var myGameArea = {
             canvas : document.createElement("canvas"),
             start : function() {
@@ -143,5 +168,9 @@
         <div class="button">
         <button class="button" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">JUMP</button>
         </div>
+        <div class="btn">
+            <button class="btn" onClick="window.location.reload();">RESTART</button>
+        </div>
         </body>
         </html>
+        
