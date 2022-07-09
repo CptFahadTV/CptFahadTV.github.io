@@ -59,7 +59,16 @@ body {
 .box {
     position: absolute;
     top: 130px;
-    left: 190px;
+    left: 135px;
+}
+
+.box2 {
+    position: absolute;
+    top: 0px;
+    left: 605px;
+    width: 483px;
+    height: 272px;
+    border: 1px solid crimson;
 }
 
 .lnk {
